@@ -1,0 +1,13 @@
+.skills-icon {
+  font-size: 2em;
+  transition: opacity 0.2s, color 0.2s, transform 0.2s;
+ 
+}
+
+.skills-icon:hover {
+  transform: scale(1.5);
+}
+
+.icon-skills {
+  margin: 1em;
+}

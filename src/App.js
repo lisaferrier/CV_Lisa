@@ -1,26 +1,41 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment } from 'react';
+import './App.scss';
+import Headers from './components/header/Headers';
+import AboutMe from './components/aboutme/AboutMe';
+import Portfolio from './components/portfolio/Portfolio';
+import Contact from './components/contact/Contact';
+import CvDownload from './components/cvdownload/CvDownload'
+import { Container } from 'semantic-ui-react'
+import Projects from './components/projects/Projects';
+import Fade from 'react-reveal/Fade';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Fragment>
+        <Fade>
+        </Fade>
+        <Fade>
+          <Headers />
+        </Fade>
+        <Container>
+            <AboutMe />
+        
+          <Fade>
+            <Projects />
+          </Fade>
+          <Fade>
+            <Portfolio />
+          </Fade>
+          <Fade>
+            <Contact />
+          </Fade>
+          <Fade>
+            <CvDownload />
+          </Fade>
+        </Container>
+
+      </Fragment>
     );
   }
 }
