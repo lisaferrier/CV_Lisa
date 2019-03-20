@@ -3,12 +3,12 @@ import { Grid, Icon, Header } from 'semantic-ui-react'
 import './Skills.scss';
 import responsive from '../../pictures/responsive.svg';
 import adobe from '../../pictures/adobe.svg';
-import iteration from '../../pictures/iteration.svg';
 
 class Skills extends Component {
   render() {
     return (
-      <div id="skills" style={{ background: '#F0F0F0' }}>
+      <div id="skills" >
+        <div style={{ backgroundColor: 'greenyellow', width: '10vw', height: '0.5em', margin: '5vh -60px' }} />
         <Header as='h2' icon textAlign='center'>
           <Header.Content>mes compétences</Header.Content>
         </Header>
@@ -49,11 +49,11 @@ class Skills extends Component {
               </div>
 
               <div className="icon-skills">
-                <img /* alt='logo-adobe' */ src={adobe} style={{ width: '2.4em' }} />
+                <img alt='logo-adobe' src={adobe} style={{ width: '2.4em' }} />
                 <p className="text-skills">adobe XD</p>
               </div>
               <div className="icon-skills">
-                <img  /* alt='responsive-logo'  */ src={responsive} style={{ width: '2.4em' }} />
+                <img alt='responsive-logo' src={responsive} style={{ width: '2.4em' }} />
                 <p className="text-skills">responsive design</p>
               </div>
             </Grid.Column>
@@ -82,7 +82,9 @@ class Skills extends Component {
               </div>
             </Grid.Column>
             <Grid.Column textAlign='center' style={{ display: 'flex', justifyContent: 'space-around' }}>
-              english
+              Anglais : bonne compréhension
+              Espagnol : niveau scolaire
+              Librairies React.js utilisés : react semantic ui, ant.design, reactstrap, react router dom, material ui
             </Grid.Column>
           </Grid.Row>
         </Grid>

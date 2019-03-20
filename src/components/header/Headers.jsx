@@ -11,7 +11,7 @@ class Headers extends Component {
             <a href="#resume" className="link-nav">à propos de moi</a>
             <a href="#skills" className="link-nav">compétences</a>
             <a href="#formation" className="link-nav">expérience & formation</a>
-            <a href="#projets" className="link-nav">Projets</a>
+            <a href="#projets" className="link-nav">projets</a>
             <a href="#portfolio" className="link-nav">portfolio</a>
             <a href="#contact" className="link-nav">contact</a>
             <a href="#download-cv" className="link-nav">télécharger mon c.v.</a>
@@ -27,6 +27,7 @@ class Headers extends Component {
 
           </Grid.Column>
         </Grid>
+        <div style={{ backgroundColor: 'greenyellow', width: '10vw', height: '0.5em', margin: '5vh -60px' }} />
       </header>
     );
   }

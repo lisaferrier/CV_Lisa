@@ -7,3 +7,11 @@
 body { 
   font-family: $Tajawal !important;
 }
+
+.hover-link:hover, .link-nav:hover {
+  color: greenyellow !important;
+}
+
+.ui.button:hover {
+  background-color: greenyellow!important;
+}
