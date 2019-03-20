@@ -1,0 +1,30 @@
+header {
+    // background-image: url(../pictures/background.png);
+    background: black;
+    .ui.huge.header.lisa-ferrier {
+      color: white;
+    }
+    
+    .link-nav {
+      color: white; margin-right: 10px;
+    }
+    
+    nav {
+      text-align: right;
+    }
+    
+    .ui.medium.header.subtitle-header {
+      color: white;
+      font-weight:lighter;
+      font-size: 2em;
+      white-space: nowrap;/*Evitar saltos de línea*/
+      overflow: hidden;
+      width: 30em;
+      animation: keyframes 5s steps(500) infinite; 
+    }
+    
+    @keyframes keyframes { 
+      from{ width: 0px;} 
+    } 
+}
+
