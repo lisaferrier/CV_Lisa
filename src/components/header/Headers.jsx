@@ -6,7 +6,7 @@ class Headers extends Component {
   render() {
     return (
       <header>
-        <nav>
+        <nav> 
           <p>
             <a href="#resume" className="link-nav">à propos de moi</a>
             <a href="#skills" className="link-nav">compétences</a>
@@ -27,7 +27,7 @@ class Headers extends Component {
 
           </Grid.Column>
         </Grid>
-        <div style={{ backgroundColor: 'greenyellow', width: '10vw', height: '0.5em', margin: '5vh -60px' }} />
+        <div className="green-divider"  />
       </header>
     );
   }

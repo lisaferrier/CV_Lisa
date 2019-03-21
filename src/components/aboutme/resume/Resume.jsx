@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import { Header, Image, Grid, Popup, Container, Icon } from 'semantic-ui-react';
 import Moi from '../../pictures/moi.jpg';
-import css from '../../pictures/css.png'
+import css from '../../pictures/css.png';
+import './Resume.scss';
 
 class Resume extends Component {
   render() {
     return (
       <div id="resume" >
-        <div style={{ backgroundColor: 'greenyellow', width: '10vw', height: '0.5em', margin: '5vh -60px' }} />
         <Header as='h2' icon textAlign='center'>
-          <Header.Content>à propos de moi</Header.Content>
+          <Header.Content className="title-part">
+            À propos de moi
+          </Header.Content>
         </Header>
-        <Grid>
-          <Grid.Column computer={4} mobile={16} style={{ display: 'flex', justifyContent: 'center' }}>
-            <Image src={Moi} circular style={{ border: '10px solid white' }} />
+        <Grid >
+          <Grid.Column computer={4} mobile={16} >
+            <Image src={Moi} circular style={{ border: '10px solid greenyellow' }} />
           </Grid.Column>
           <Grid.Column computer={12} mobile={16}>
             <Container text>
@@ -23,6 +25,8 @@ class Resume extends Component {
             </Container>
           </Grid.Column>
         </Grid>
+        <div className="triangle" style={{ height: '3em', width: '10vw' }}></div>
+
         <p>
           <Icon className="birthday-icon" name='birthday cake' />
           22 mai 1998

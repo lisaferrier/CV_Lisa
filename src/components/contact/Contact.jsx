@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import { Icon, Grid, Header } from 'semantic-ui-react';
+import { Icon, Grid, Header, Container } from 'semantic-ui-react';
+import './Contacts.scss';
 
 class Contact extends Component {
   render() {
     return (
-      <div className="contact">
-        <div style={{ backgroundColor: 'greenyellow', width: '10vw', height: '0.5em', margin: '5vh -60px' }} />
+      <Container text>
+      <div className="contact" style={{ background: 'black', color: 'white' }}>
+
         <Header as='h2' icon textAlign='center'>
-          <Header.Content>contactez-moi</Header.Content>
+          <Header.Content className="title-part">Contactez-moi !</Header.Content>
         </Header>
-        <Grid divided>
-          <Grid.Row >
-            <Grid.Column computer={8} mobile={16} style={{ display: 'flex', justifyContent: 'center' }}>
+        <Grid>
+            <Grid.Column computer={8} mobile={16}  className="column-contact-left" >
               <div>
                 <p className="phone-contact" style={{ fontWeight: 'bold', textTransform: 'uppercase', borderBottom: '2px solid black' }}>
                   <Icon className="phone-icon" name='phone square large' />
@@ -23,7 +24,7 @@ class Contact extends Component {
                 </p>
               </div>
             </Grid.Column>
-            <Grid.Column computer={8} mobile={16} style={{ display: 'flex', justifyContent: 'center' }}>
+            <Grid.Column computer={8} mobile={16} className="column-contact-right" >
               <div>
                 <p className="adress-contact" style={{ fontWeight: 'bold', textTransform: 'uppercase', borderBottom: '2px solid black' }}>
                   <Icon className="adress-icon" name='map marker alternate large' />
@@ -35,9 +36,9 @@ class Contact extends Component {
                 </p>
               </div>
             </Grid.Column>
-          </Grid.Row>
         </Grid>
       </div>
+      </Container>
     );
   }
 }
