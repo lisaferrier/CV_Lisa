@@ -3,14 +3,17 @@ import { Grid, Icon, Header } from 'semantic-ui-react'
 import './Skills.scss';
 import responsive from '../../pictures/responsive.svg';
 import adobe from '../../pictures/adobe.svg';
-import iteration from '../../pictures/iteration.svg';
+import kraken from '../../pictures/kraken.svg';
 
 class Skills extends Component {
   render() {
     return (
-      <div id="skills" style={{ background: '#F0F0F0' }}>
+      <div id="skills" >
+        <div className="green-divider" />
         <Header as='h2' icon textAlign='center'>
-          <Header.Content>mes compétences</Header.Content>
+          <Header.Content className="title-part">
+            Mes compétences
+            </Header.Content>
         </Header>
         <Grid columns='three'>
           <Grid.Row>
@@ -20,7 +23,7 @@ class Skills extends Component {
             <Grid.Column textAlign='center'>
               <span className="environ-title" style={{ fontWeight: 'bold', textTransform: 'uppercase' }}>environnement de travail</span>
             </Grid.Column>
-            <Grid.Column textAlign='center'>Random</Grid.Column>
+            <Grid.Column textAlign='center' style={{ fontWeight: 'bold', textTransform: 'uppercase' }}>Random</Grid.Column>
           </Grid.Row>
         </Grid>
 
@@ -49,16 +52,16 @@ class Skills extends Component {
               </div>
 
               <div className="icon-skills">
-                <img /* alt='logo-adobe' */ src={adobe} style={{ width: '2.4em' }} />
+                <img alt='logo-adobe' src={adobe} style={{ width: '2.4em' }} />
                 <p className="text-skills">adobe XD</p>
               </div>
               <div className="icon-skills">
-                <img  /* alt='responsive-logo'  */ src={responsive} style={{ width: '2.4em' }} />
+                <img alt='responsive-logo' src={responsive} style={{ width: '2.4em' }} />
                 <p className="text-skills">responsive design</p>
               </div>
             </Grid.Column>
 
-            <Grid.Column textAlign='center' style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <Grid.Column textAlign='center' style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
               <div className="icon-skills">
                 <Icon className="skills-icon" name='linux large' style={{ fontSize: '3em' }} />
                 <p className="text-skills">ubuntu
@@ -80,9 +83,25 @@ class Skills extends Component {
                 <Icon className="skills-icon" name='redo large' style={{ fontSize: '3em' }} />
                 <p className="text-skills">scrum & agile</p>
               </div>
+              <div className="icon-skills">
+                <Icon className="skills-icon" name='gitkraken large' style={{ fontSize: '3em' }} />
+                <p className="text-skills">GitKraken</p>
+              </div>
             </Grid.Column>
-            <Grid.Column textAlign='center' style={{ display: 'flex', justifyContent: 'space-around' }}>
-              english
+            <Grid.Column style={{}}>
+              <ul>
+                <li style={{ fontWeight: 'bold' }}>Langues :</li>
+                Anglais : bonne compréhension<br />
+                Espagnol : niveau scolaire
+              </ul>
+              <ul>
+                <li style={{ fontWeight: 'bold' }}>Librairies React.js utilisés :</li>
+                Semantic UI React, Ant Design, reactstrap, react-router-dom, Material-UI
+              </ul>
+              <ul>
+                <li style={{ fontWeight: 'bold' }}>Pack Office :</li>
+                Word, PowerPoint, Publisher
+              </ul>
             </Grid.Column>
           </Grid.Row>
         </Grid>
